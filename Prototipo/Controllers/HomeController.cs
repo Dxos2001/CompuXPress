@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Prototipo.Models;
 using System.Diagnostics;
+using System.Runtime.InteropServices.JavaScript;
 
 namespace Prototipo.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private readonly Util _util;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
